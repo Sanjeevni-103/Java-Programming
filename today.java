@@ -10,6 +10,5 @@ class today{
 				
 			}
 		}
-		sc.close();
 	}	
 }
