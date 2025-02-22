@@ -1,13 +1,14 @@
-import java.util.Scanner;
-public class sum {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter first number :- ");
-        int a = sc.nextInt();
-        System.out.print("Enter second number :- ");
-        int b = sc.nextInt();
-        int sum = a + b;
-        System.out.println("Sum of two numbers is :- "+sum);
-        
+//Write a java program to find the sum of digists of a number
+
+class sum{
+    public static void main(String args[]){
+         int n=103;
+         int sum=0;
+         while(n>0){
+              int temp = n%10;
+              sum=sum+temp;
+              n=n/10;
+         }
+         System.out.println("sum of the digits of the number is: " +sum);
     }
 }
